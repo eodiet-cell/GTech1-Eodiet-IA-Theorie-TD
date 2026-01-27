@@ -3,7 +3,8 @@
     "minimum_version": "10.0.40219.1",
     "projects": [
         "LightEngine.prj",
-        "Sample.prj"
+        "Sample.prj",
+        "PvZ.prj"
     ],
     "solution_name": "LightEngine",
     "version": "16",
