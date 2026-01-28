@@ -1,73 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-    <ItemGroup>
-        <Filter Include="header">
-            <UniqueIdentifier>{5624B5D4-EF60-4B5B-8B5E-EACAB14AC733}</UniqueIdentifier>
-            <Extensions>h;hpp</Extensions>
-        </Filter>
-        <Filter Include="resource">
-            <UniqueIdentifier>{ECC2D59F-CDB9-4B15-9C43-56669EBE0163}</UniqueIdentifier>
-            <Extensions>hlsl;jpg;jpeg;png;wav;mp3;ico;dds;rc;obj</Extensions>
-        </Filter>
-        <Filter Include="source">
-            <UniqueIdentifier>{568CEA5B-76BC-4FEA-BDAC-C38053D6E870}</UniqueIdentifier>
-            <Extensions>cpp;c</Extensions>
-        </Filter>
-    </ItemGroup>
-    <ItemGroup>
-        <ClCompile Include="..\..\..\src\PvZ\main.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClCompile Include="..\..\..\src\PvZ\Plant.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClCompile Include="..\..\..\src\PvZ\PlantState.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClCompile Include="..\..\..\src\PvZ\Projectile.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClCompile Include="..\..\..\src\PvZ\StateBase.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClCompile Include="..\..\..\src\PvZ\StateMachine.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClCompile Include="..\..\..\src\PvZ\Zombie.cpp">
-            <Filter>source</Filter>
-        </ClCompile>
-        <ClInclude Include="..\..\..\src\PvZ\main.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\Plant.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\PlantState.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\Projectile.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\resource.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\StateBase.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\StateMachine.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <ClInclude Include="..\..\..\src\PvZ\Zombie.h">
-            <Filter>header</Filter>
-        </ClInclude>
-        <None Include="..\..\..\src\PvZ\app.ico">
-            <Filter>resource</Filter>
-        </None>
-        <None Include="..\..\..\src\PvZ\app.rc">
-            <Filter>resource</Filter>
-        </None>
-        <None Include="..\..\..\src\PvZ\small.ico">
-            <Filter>resource</Filter>
-        </None>
-    </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{5624B5D4-EF60-4B5B-8B5E-EACAB14AC733}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{ECC2D59F-CDB9-4B15-9C43-56669EBE0163}</UniqueIdentifier>
+      <Extensions>hlsl;jpg;jpeg;png;wav;mp3;ico;dds;rc;obj</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{568CEA5B-76BC-4FEA-BDAC-C38053D6E870}</UniqueIdentifier>
+      <Extensions>cpp;c</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\PvZ\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\PvZ\Plant.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\PvZ\PlantState.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\PvZ\Projectile.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\PvZ\StateBase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\PvZ\StateMachine.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\PvZ\Zombie.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\src\PvZ\main.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\Plant.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\PlantState.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\Projectile.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\resource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\StateBase.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\StateMachine.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PvZ\Zombie.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <None Include="..\..\..\src\PvZ\app.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\..\..\src\PvZ\app.rc">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\..\..\src\PvZ\small.ico">
+      <Filter>resource</Filter>
+    </None>
+    <ClCompile Include="..\..\..\src\PvZ\GameScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\PvZ\GameScene.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

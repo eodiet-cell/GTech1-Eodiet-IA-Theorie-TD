@@ -3,7 +3,7 @@
 #include "Entity.h"
 #include "StateMachine.h"
 
-class Plant : Entity
+class Plant : public Entity
 {
 private :
 	int m_capacity = 6;
