@@ -21,7 +21,6 @@ void GameScene::OnEvent(const sf::Event& event)
 	if (event.mouseButton.button == sf::Mouse::Button::Right) {
 		Zombie* tmp = CreateEntity<Zombie>(50, sf::Color::Red);
 		tmp->SetPosition(event.mouseButton.x, event.mouseButton.y);
-		m_zombies.push_back(tmp);
 	}
 
 	if (event.mouseButton.button == sf::Keyboard::R)

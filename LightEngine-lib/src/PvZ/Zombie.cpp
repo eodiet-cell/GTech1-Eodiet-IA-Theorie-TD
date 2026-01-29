@@ -13,5 +13,8 @@ void Zombie::OnCollision(Entity* other)
 	if (Projectile* proj = dynamic_cast<Projectile*>(other)) {
 		m_hp--;
 		proj->Destroy();
+		if (m_hp <= 0) {
+			Destroy();
+		}
 	}
 }
