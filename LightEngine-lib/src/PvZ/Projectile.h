@@ -1,5 +1,10 @@
 #pragma once
-class Projectile
+
+#include "Entity.h"
+
+class Projectile : public Entity
 {
+public :
+	void OnInitialize() override;
 };
 
