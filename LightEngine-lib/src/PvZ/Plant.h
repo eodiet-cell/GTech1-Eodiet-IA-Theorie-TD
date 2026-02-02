@@ -1,15 +1,8 @@
-#pragma once
-
 #include "Entity.h"
 #include "StateMachine.h"
 
 class Plant : public Entity
 {
-private :
-	int m_capacity = 6;
-	int m_ammo;
-
-public:
 	enum class State
 	{
 		Idle,
@@ -19,22 +12,88 @@ public:
 		Count
 	};
 
-private:
 	StateMachine<Plant> m_stateMachine;
-public :
+	int m_bullet;
+	int m_capacity;
 
-	void OnInitialize() override;
-
-	void OnUpdate() override;
-
+	
+public:
 	void Shoot();
-
 	void Reload();
 
-	void TryTransitionTo(State state);
+protected:
+	void OnInitialize() override;
+	void OnUpdate() override;
 
-	friend class IdlePlantState;
-	friend class ShootingPlantState;
-	friend class ReloadingPlantState;
+private:
+	const char* StateToStr() const;
+
+	friend class IdlePLantState;
+	friend class ShootingPLantState;
+	friend class ReloadingPLantState;
+
+	friend class NoAmmoCondition;
+	friend class HasZombieOnLaneCondition;
+	friend class NotFullAmmoCondition;
 };
 
+class IdlePLantState : public StateBase<Plant>
+{
+public:
+	void Start(Plant* type) override;
+	void Update(Plant* type, float dt) override;
+	void End(Plant* type) override;
+};
+
+class ShootingPLantState : public StateBase<Plant>
+{
+public:
+	float m_delay;
+
+private:
+	float m_timer;
+
+public:
+	void Start(Plant* type) override;
+	void Update(Plant* type, float dt) override;
+	void End(Plant* type) override;
+};
+
+class ReloadingPLantState : public StateBase<Plant>
+{
+public:
+	float m_delay;
+
+private:
+	float m_timer;
+
+public:
+	void Start(Plant* type) override;
+	void Update(Plant* type, float dt) override;
+	void End(Plant* type) override;
+};
+
+class NoAmmoCondition : public Condition<Plant> 
+{
+public:
+	bool Test(Plant* plant) override;
+};
+
+class HasZombieOnLaneCondition : public Condition<Plant>
+{
+public:
+	bool Test(Plant* plant) override;
+};
+
+class NotFullAmmoCondition : public Condition<Plant>
+{
+public:
+	bool Test(Plant* plant) override;
+};
+
+class DelayCondition : public Condition<Plant>
+{
+	float m_delay;
+public:
+	bool Test(Plant* plant) override;
+};

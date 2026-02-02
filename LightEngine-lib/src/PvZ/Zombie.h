@@ -1,15 +1,10 @@
-#pragma once
-
 #include "Entity.h"
 
-class Zombie : public Entity
+class Zombie : public Entity 
 {
-private :
-	int m_hp;
+	float m_currentHealth;
 
-public :
+protected:
 	void OnInitialize() override;
-
-	void OnCollision(Entity* other) override;
+	void OnCollision(Entity* entity) override;
 };
-

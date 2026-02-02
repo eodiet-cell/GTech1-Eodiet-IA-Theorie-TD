@@ -2,15 +2,15 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
     <ItemGroup>
         <Filter Include="header">
-            <UniqueIdentifier>{B53098B0-1DD1-477D-B864-7BB88E80408B}</UniqueIdentifier>
+            <UniqueIdentifier>{E6AD5061-CE23-419D-98A9-00D0C55CBA71}</UniqueIdentifier>
             <Extensions>h;hpp</Extensions>
         </Filter>
         <Filter Include="resource">
-            <UniqueIdentifier>{F68391CC-12D6-4D1C-87D8-DAC1FB3B60C2}</UniqueIdentifier>
+            <UniqueIdentifier>{FA870884-DF33-43DF-8A40-FDF3B50A27F5}</UniqueIdentifier>
             <Extensions>hlsl;jpg;jpeg;png;wav;mp3;ico;dds;rc;obj</Extensions>
         </Filter>
         <Filter Include="source">
-            <UniqueIdentifier>{7FBA9F2C-C160-4D3A-A219-408E304E9C5F}</UniqueIdentifier>
+            <UniqueIdentifier>{5260090A-F9DE-4D60-8D25-B1B725F88B02}</UniqueIdentifier>
             <Extensions>cpp;c</Extensions>
         </Filter>
     </ItemGroup>
@@ -27,6 +27,12 @@
         <ClCompile Include="..\..\..\src\LightEngine\Scene.cpp">
             <Filter>source</Filter>
         </ClCompile>
+        <ClCompile Include="..\..\..\src\LightEngine\StateBase.cpp">
+            <Filter>source</Filter>
+        </ClCompile>
+        <ClCompile Include="..\..\..\src\LightEngine\StateMachine.cpp">
+            <Filter>source</Filter>
+        </ClCompile>
         <ClCompile Include="..\..\..\src\LightEngine\Utils.cpp">
             <Filter>source</Filter>
         </ClCompile>
@@ -40,6 +46,12 @@
             <Filter>header</Filter>
         </ClInclude>
         <ClInclude Include="..\..\..\src\LightEngine\Scene.h">
+            <Filter>header</Filter>
+        </ClInclude>
+        <ClInclude Include="..\..\..\src\LightEngine\StateBase.h">
+            <Filter>header</Filter>
+        </ClInclude>
+        <ClInclude Include="..\..\..\src\LightEngine\StateMachine.h">
             <Filter>header</Filter>
         </ClInclude>
         <ClInclude Include="..\..\..\src\LightEngine\Utils.h">

@@ -1,6 +1,11 @@
 #include "Projectile.h"
 
+#include "PvZScene.h"
+
+constexpr int ProjectileSpeed = 400;
+
 void Projectile::OnInitialize()
 {
-	SetDirection(1.f, 0.f, 100);
+	SetTag((int)PvZScene::Tag::Projectile);
+	SetDirection(1, 0, ProjectileSpeed);
 }
